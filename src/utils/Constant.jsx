@@ -1,0 +1,9 @@
+
+const DATAJS = {
+  LOAD_DATA: "LOAD_YOUTUBE",
+  QUERY: "YOUTUBE_QUERY",
+  PLAYER: "PLAYER_UPDATE",
+  P_STATUS: "PLAYER_STATE",
+}
+
+export default DATAJS;
