@@ -2,12 +2,10 @@ import { useState, useEffect } from 'react'
 import {SearchQuery, Updatefrom, RequestsData} from "../reducer/Action"
 
 export default function Navbar(props){
-  const token = "";
-  
   const [searchx, setSearch] = useState(false);
   useEffect(() => {
     if(props.ld.youquery !== undefined) {
-      const Apiurl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&type=video&key=${token}&q=${props.ld.youquery}`;
+      const Apiurl = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&type=video&key=${process.env.TOKEN_YOUTUBE}&q=${props.ld.youquery}`;
       props.dis(RequestsData(Apiurl))
       setTimeout(() => setSearch(false), 2000);
     }
