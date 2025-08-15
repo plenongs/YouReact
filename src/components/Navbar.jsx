@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import {SearchQuery, Updatefrom, RequestsData} from "../reducer/Action"
 
 export default function Navbar(props){
-  const token = "AIzaSyAUGB_N7HwZQ_1cZyHOMqqirOiY7x6KjPU"; //PU
+  const token = "";
   
   const [searchx, setSearch] = useState(false);
   useEffect(() => {
