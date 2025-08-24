@@ -7,6 +7,7 @@ const initialState = {
   playertitle: undefined,
   playerchannel: undefined,
   playerstatus: false,
+  updates: false,
 }
 
 const Reducer = (state = initialState, action) => {
@@ -33,6 +34,11 @@ const Reducer = (state = initialState, action) => {
         ...state,
         playerstatus: action.pstate,
       } ;
+    case DATAJS.UPDATES:
+      return {
+        ...state,
+        updates: action.upds
+      }
     default:
       return state;
   }

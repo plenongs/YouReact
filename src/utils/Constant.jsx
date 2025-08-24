@@ -4,6 +4,7 @@ const DATAJS = {
   QUERY: "YOUTUBE_QUERY",
   PLAYER: "PLAYER_UPDATE",
   P_STATUS: "PLAYER_STATE",
+  UPDATES: "UPDATE_DATA",
 }
 
 export default DATAJS;

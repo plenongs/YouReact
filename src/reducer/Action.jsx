@@ -36,6 +36,7 @@ export const UpdateStatus = (moo) => (dispatch) => {
     pstate: moo,
   });
 }
+
 export const UpdatePlayer = (idz, title, chan) => (dispatch) => {
   dispatch({
     type: DATAJS.PLAYER,
@@ -43,4 +44,11 @@ export const UpdatePlayer = (idz, title, chan) => (dispatch) => {
     ptitle: title,
     pchannel: chan,
   });
+}
+
+export const Updates = (moo) => (dispatch) => {
+  dispatch({
+    type: DATAJS.UPDATES,
+    upds: moo,
+  })
 }
